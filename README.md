@@ -1,0 +1,2 @@
+# sdram_controller
+使用verilog编写sdram控制器
