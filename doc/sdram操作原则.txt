@@ -1,0 +1,11 @@
+1.优先权原则：新的命令优先级最高
+	1.读写可以被读写中断
+	2.读写可以被precharge中断
+	3.读写可以被专用的burst stop中断
+2.bank独立原则
+3.总线兼容原则（命令总线，地址总线，数据总线）
+
+
+read和precharge都是要根据CL读写数据，命令(read/precharge)和数据总线(DQ)隔CL个clk
+write根据BL写数据，write和DQ有隔0个clk，连续读BL个数据
+burst stop和DQ隔CL个clk
